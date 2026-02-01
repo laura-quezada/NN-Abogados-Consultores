@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathaly Núñez | Abogados Consultores</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-color: #f7f2eb;
+      color: #020202;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER STICKY */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(247, 242, 235, 0.97);
+      padding: 15px 60px;
+      border-bottom: 2px solid #a8815b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(6px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .brand img {
+      height: 90px;
+    }
+
+    .brand h1 {
+      font-size: 30px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 18px;
+      color: #020202;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #a8815b;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(2,2,2,0.55), rgba(2,2,2,0.55)),
+        url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 40px;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 14px 35px;
+      border: none;
+      background-color: #a8815b;
+      color: white;
+      font-size: 17px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #020202;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 80px;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #a8815b;
+      font-size: 34px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    section p {
+      font-size: 19px;
+      line-height: 1.9;
+      text-align: center;
+    }
+
+    /* PRACTICE AREAS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.10);
+      text-align: center;
+      transition: 0.3s;
+      border-top: 4px solid #a8815b;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #020202;
+    }
+
+    /* TEAM */
+    .team-member {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0px 4px 14px rgba(0,0,0,0.10);
+      margin-bottom: 25px;
+      border-left: 5px solid #a8815b;
+      text-align: center;
+    }
+
+    .team-member h3 {
+      font-size: 22px;
+    }
+
+      margin-top: 0;
+      color: #020202;
+      font-size: 22px;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0px 4px 14px rgba(0,0,0,0.10);
+      text-align: center;
+      border-top: 5px solid #a8815b;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #020202;
+      color: #f7f2eb;
+      margin-top: 60px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <img src="Logo NN.png" alt="Logo NN">
+      <h1>Nathaly Núñez | Abogados Consultores</h1>
+    </div>
+
+    <nav>
+      <a href="#sobre">Sobre nosotros</a>
+      <a href="#areas">Áreas</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h2>Soluciones legales estratégicas</h2>
+      <p>
+        Brindamos asesoría legal integral y soluciones estratégicas con respaldo jurídico sólido en cada gestión.
+      </p>
+      <button onclick="location.href='#contacto'">Agendar consulta</button>
+    </div>
+  </div>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="sobre">
+    <h2>Sobre nosotros</h2>
+    <p>
+      Somos una firma legal dominicana de servicio integral, que ofrece asesoría jurídica experta en derecho corporativo,
+      derecho civil, inmobiliario, litigios y cumplimiento regulatorio.
+    </p>
+    <p>
+      Con un equipo multilingüe, atendemos a inversionistas internacionales, desarrolladores y empresas,
+      brindando soluciones estratégicas y eficientes en los principales sectores del país.
+    </p>
+  </section>
+
+  <!-- ÁREAS -->
+  <section id="areas">
+    <h2>Áreas de práctica</h2>
+
+    <div class="grid">
+      <div class="card"><h3>Derecho Civil</h3></div>
+      <div class="card"><h3>Derecho Corporativo</h3></div>
+      <div class="card"><h3>Litigios</h3></div>
+      <div class="card"><h3>Derecho Bancario y Financiero</h3></div>
+      <div class="card"><h3>Derecho Penal</h3></div>
+       <div class="card"><h3>Derecho Migratorio</h3></div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section id="equipo">
+    <h2>Nuestro equipo</h2>
+
+    <div class="team-member">
+      <h3>Nathaly Núñez de la Rosa — Socia Fundadora</h3>
+      <p>
+        Egresada de la Universidad Católica Santo Domingo (UCSD), con Maestría en Derecho Corporativo por la Pontificia Universidad Católica Madre y Maestra (PUCMM).
+        Cuenta con amplia experiencia en Derecho Corporativo, Derecho Inmobiliario y Litigios, brindando asesoría estratégica y soluciones jurídicas eficaces a empresas e inversionistas.
+      </p>
+    </div>
+
+    <div class="team-member">
+      <h3>Laura Quezada Domínguez — Socia</h3>
+      <p>
+        Abogada egresada Magna Cum Laude de la Universidad Católica Santo Domingo (UCSD), con Maestría en Derecho Bancario y Financiero por la Universidad Autónoma de Santo Domingo (UASD). Se especializa en cumplimiento regulatorio y litigios. Integra su práctica con un enfoque innovador en ciberseguridad y legal tech.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+
+    <div class="contact-box">
+      <p><strong>Teléfonos:</strong> 829-342-0922 / 809-865-6290</p>
+      <p><strong>Email:</strong> info@nnunezlegal.net</p>
+      <p><strong>Dirección:</strong><br>
+        Calle Victor Garrido Puello #184, Evaristo Morales,<br>
+        Santo Domingo, Distrito Nacional, República Dominicana
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Nathaly Núñez Abogados Consultores — Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
